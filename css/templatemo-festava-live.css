@@ -1021,3 +1021,67 @@ strong {
 }
 
 
+/*---------------------------------------
+  MENU DEROULANT PROGREMME             
+-----------------------------------------*/
+
+
+
+#programme{
+  color:white;
+}
+#programme ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+#programme ul:hover {
+  overflow: visible;
+}
+#programme li {
+  position: relative;
+  float: left;
+  background-color: #EE5007;
+}
+#programme li:hover {
+  background-color: #9b380b;
+}
+#programme a {
+  display: block;
+
+}
+
+/* second level */
+#programme ul ul {
+  max-height: 0;
+  transition: max-height 1s;
+}
+#programme ul li:hover ul {
+  max-height: 999px;
+}
+#programme ul ul li {
+  float: none;
+  background-color: #EE5007;
+}
+#programme ul ul li:hover {
+  background-color: #9b380b;
+}
+
+/* third level */
+#programme ul ul ul {
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 100%;
+  transition: width 0.5s;
+}
+#programme ul ul li:hover ul {
+  width: 100%;
+}
+#programme ul ul ul li {
+  background-color: black;
+}
+#programme ul ul ul li:hover {
+  background-color: rgb(25, 25, 25);
+}

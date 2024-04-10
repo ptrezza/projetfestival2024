@@ -121,6 +121,13 @@ body .card_right__button a:hover {
   transition-duration: 0.5s;
 }
 
+.card_right__review p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
 
 #filAriane{
   margin: 10px 0;
