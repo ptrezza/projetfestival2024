@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+body {
+  background: grey;
+  width: 100%;
+  height: 100vh;
+}
+body .navbar navbar-expand-lg{
+	height:10%;
+}
+body .cardFilm {
+  width: 80%;
+  /*height: 80%;*/
+  background: #000000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 15%;
+  bottom: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+body .card_left {
+  width: 40%;
+  /*height: 100%;*/
+  float: left;
+  overflow: hidden;
+  background: #000000;
+}
+body .card_left img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  position: relative;
+}
+body .card_right {
+  width: 60%;
+  float: left;
+  background: #000000;
+  /*height: 100%;*/
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+}
+body .card_right h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  padding: 0 0 0 40px;
+  letter-spacing: 1px;
+}
+body .card_right__details ul {
+  list-style-type: none;
+  padding: 0 0 0 40px;
+  margin: 10px 0 0 0;
+}
+body .card_right__details ul li {
+  display: inline;
+  color: #e3e3e3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 40px 0 0;
+}
+
+body .card_right__review p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 0 40px 0 40px;
+  letter-spacing: 1px;
+  margin: 20px 0 10px 0;
+  line-height: 20px;
+}
+body .card_right__review a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 0 0 0 40px;
+  color: #ffda00;
+  margin: 0;
+}
+body .card_right__button {
+  padding: 0 0 0 40px;
+  margin: 30px 0 0 0;
+}
+body .card_right__button a {
+  color: #ffda00;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #ffda00;
+  padding: 10px 10px 10px 40px;
+  font-size: 12px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 7% 50%;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+body .card_right__button a:hover {
+  color: #000000;
+  background-color: #ffda00;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+
+#filAriane{
+  margin: 10px 0;
+}
+#filAriane ul li{
+  float: left;
+  display: inline;
+}
+#filAriane ul li::after{
+  content: " > ";
+}
+
+#filAriane ul li:last-child{
+  font-weight: bold;
+}
+
+#filAriane ul li:last-child::after{
+  content: "";
+}
+
+
+
+
+
+
+
+
+#programme{
+  color:white;
+}
+#programme ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+#programme ul:hover {
+  overflow: visible;
+}
+#programme li {
+  position: relative;
+  float: left;
+  background-color: #EE5007;
+}
+#programme li:hover {
+  background-color: #9b380b;
+}
+#programme a {
+  display: block;
+
+}
+
+/* second level */
+#programme ul ul {
+  max-height: 0;
+  transition: max-height 1s;
+}
+#programme ul li:hover ul {
+  max-height: 999px;
+}
+#programme ul ul li {
+  float: none;
+  background-color: #EE5007;
+}
+#programme ul ul li:hover {
+  background-color: #9b380b;
+}
+
+/* third level */
+#programme ul ul ul {
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 100%;
+  transition: width 0.5s;
+}
+#programme ul ul li:hover ul {
+  width: 100%;
+}
+#programme ul ul ul li {
+  background-color: black;
+}
+#programme ul ul ul li:hover {
+  background-color: rgb(25, 25, 25);
+}
